@@ -11,26 +11,30 @@ html, body {
 body{
   /*margin-bottom: 60px;*/
   font-size: 14px;
+  color: #231f20;
 }
 
 .footer_sticked{
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 43px;
   background-color: #f5f5f5;
 }
+
 
 .header_logo{
   display: inline-block;
   width: 218px;
   height: 74px;
   background: url("img/logo.png");
+  margin-top: 7px;
 }
 
 .header_phones{
   font-family: 'Europe', arial;
   color: #eb5017;
+  font-size: 18px;
 }
 
 .header_phones p{
@@ -43,6 +47,7 @@ body{
 }
 .navtop ul{
   padding:0;
+  margin:0;
 }
 .navtop ul li{
   display: inline-block;
@@ -65,4 +70,47 @@ body{
 
 .navtop ul li:hover{
   background-color: #eb5017;
+}
+
+.navbottom{
+  background-color: #231f1f;
+  color: #ffffff;
+}
+.navbottom ul{
+  padding:0;
+  margin:0;
+}
+.navbottom ul li{
+
+}
+.navbottom ul li a{
+  display: inline-block;
+  height: 43px;
+  line-height: 43px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.breadcrumbs{
+  padding: 7px;
+}
+.breadcrumb_item:not(:last-child):after{
+  content: " - ";
+}
+
+.breadcrumb_item a{
+  color: #231f20;
+
+}
+.breadcrumb_item a[href]{
+  text-decoration: underline;
+}
+
+.calc .row{
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.calc_input{
+  padding: 0 1ex;
+  width: 15ex;
 }
