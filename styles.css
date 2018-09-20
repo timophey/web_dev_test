@@ -114,3 +114,16 @@ body{
   padding: 0 1ex;
   width: 15ex;
 }
+
+.burger{
+  line-height: 2em;
+  display: inline-block;
+  width: 4ex;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+.burger:hover{
+  color: #ffffff;
+  text-decoration: none;
+}

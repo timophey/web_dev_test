@@ -8,9 +8,9 @@
 
         <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
 
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/jquery-ui/dist/jquery-ui.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="script.js"></script>
     </head>
     <body>
@@ -31,7 +31,10 @@
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-12 navtop">
-                        <ul class="d-block d-lg-flex justify-content-center">
+                        <div class="d-block d-lg-none text-right">
+                            <a class="burger" data-toggle="collapse" href="#topNavMenu" aria-expanded="false" aria-controls="topNavMenu">&#9776;</a>
+                        </div>
+                        <ul class="d-lg-flex justify-content-center collapse" id="topNavMenu">
                             <li class="d-block d-lg-inline-block"><a>Кредитные карты</a></li>
                             <li class="d-block d-lg-inline-block"><a>Вклады</a></li>
                             <li class="d-block d-lg-inline-block"><a>Дебетовая карта</a></li>
