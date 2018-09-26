@@ -4,7 +4,7 @@ html{
   font-family: "Arial","sans-serif";
 }
 html, body {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -12,6 +12,7 @@ body{
   /*margin-bottom: 60px;*/
   font-size: 14px;
   color: #231f20;
+  padding-bottom: 60px;
 }
 
 .footer_sticked{
@@ -21,7 +22,6 @@ body{
   height: 43px;
   background-color: #f5f5f5;
 }
-
 
 .header_logo{
   display: inline-block;
@@ -110,9 +110,27 @@ body{
   padding-top: 7px;
   padding-bottom: 7px;
 }
+.calc .table{
+  background-color: #dfdfdf;
+  padding: 33px 18px;
+}
 .calc_input{
   padding: 0 1ex;
   width: 15ex;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+.calc_submit{
+  width: 100px;
+  height: 33px;
+  border-radius: 7px;
+  box-shadow: 1px 1.732px 5px rgba(0,0,0,0.19);
+  background-image: linear-gradient(0deg, #7cc300 0%, #aff300 100%);
+  border: 1px solid #c3c3c3;
+}
+.calc_result{
+  line-height: 2em;
 }
 
 .burger{
@@ -126,4 +144,10 @@ body{
 .burger:hover{
   color: #ffffff;
   text-decoration: none;
+}
+
+@media (max-width: 575px) {
+  .container.calc .row{
+    padding-left: 15px;
+  }
 }
